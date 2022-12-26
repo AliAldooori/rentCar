@@ -1,0 +1,79 @@
+body{
+    background:rgba(0, 0, 0, 0.626);
+}
+.menu{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.626);
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    color: white;
+    padding: 40px 40px;
+    margin: auto;
+}
+ul{
+    display: flex;
+    gap: 200px; /* white space between flex items */
+    list-style: none; /* removes the bullet graphic from the list items */
+}
+.menu-item{
+    position: relative;
+    
+}
+.menu-item::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 4px;
+    bottom: -4px;
+    left: 0;
+    background: red;
+    transition: all 250ms ease-in-out;
+    color: blue;
+}
+.menu-item:hover.menu-item::before{
+    width: 100%;
+    color: blue;
+}
+#cars{
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(205, 120, 50);
+    font-size: 22px;
+    display: none;
+}
+#loggin{
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(205, 120, 50);
+    font-size: 22px;
+}
+#loggout{
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(205, 120, 50);
+    font-size: 22px;
+    display: none;
+}
+#bocking{
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(205, 120, 50);
+    font-size: 22px;
+    display: none;
+}
+#btn:hover{
+    color: rgb(208, 255, 0);
+}
+.hide{
+    display: none;
+}
